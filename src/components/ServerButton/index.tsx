@@ -1,6 +1,6 @@
 import React from "react";
 
-import Logo from "../../assets/logo-rocketseat.svg";
+import Logo from "../../assets/cosmos.svg";
 
 import { Button } from "./styles";
 
