@@ -38,6 +38,10 @@ export const Container = styled.div`
     margin-left: 5px;
   }
 
+  > div svg {
+    display: none;
+  }
+
   &:hover,
   &:active {
     background-color: var(--quinary);
@@ -45,8 +49,13 @@ export const Container = styled.div`
     > div span {
       color: var(--white);
     }
+
+    > div svg {
+      display: inline;
+    }
   }
 `;
+export const DivEsquerda = styled.div``;
 
 export const HashtagIcon = styled(FiHash)`
   color: var(--symbol);
@@ -63,6 +72,8 @@ export const InviteIcon = styled(AiOutlineUserAdd)`
 
 export const SettingsIcon = styled(MdSettings)`
   color: var(--symbol);
+
+  margin-left: 5px;
 
   &:hover,
   &:active {

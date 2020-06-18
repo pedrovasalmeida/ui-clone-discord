@@ -6,6 +6,7 @@ import {
   InviteIcon,
   SettingsIcon,
   LockIcon,
+  DivEsquerda,
 } from "./styles";
 
 export interface Props {
@@ -17,13 +18,13 @@ export interface Props {
 const ChannelButton: React.FC<Props> = ({ channelName, selected, isLock }) => {
   return (
     <Container className={selected ? "selected" : ""}>
-      <div>
+      <DivEsquerda>
         <HashtagIcon />
         <span>{channelName}</span>
         {isLock && <LockIcon />}
-      </div>
+      </DivEsquerda>
 
-      <div>
+      <div className="direita">
         <InviteIcon />
         <SettingsIcon />
       </div>
