@@ -26,7 +26,7 @@ export const Container = styled.div`
 
   background-color: transparent;
 
-  transition: background-color 0.2s;
+  transition: display 0.2s background-color 0.2s;
 
   > div {
     display: flex;
@@ -38,19 +38,20 @@ export const Container = styled.div`
     margin-left: 5px;
   }
 
-  > div svg {
+  .direita {
     display: none;
   }
 
   &:hover,
   &:active {
     background-color: var(--quinary);
+    transition: display 0.2s;
 
     > div span {
       color: var(--white);
     }
 
-    > div svg {
+    > .direita {
       display: inline;
     }
   }
