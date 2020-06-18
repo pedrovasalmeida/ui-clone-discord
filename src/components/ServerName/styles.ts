@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { MdExpandMore } from "react-icons/md";
 
 /** GRID TEMPLATE
  * SL - Server List
@@ -10,17 +11,30 @@ import styled from "styled-components";
  * UI - User Info
  */
 
-export const Grid = styled.div`
-  display: grid;
+export const Container = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 
-  /** em ordem, largura dos components da esquerda para direita */
-  grid-template-columns: 71px 240px auto 240px;
-  grid-template-rows: 46px auto 52px;
+  padding: 0 11px 0 16px;
 
-  grid-template-areas:
-    "SL SN CI CI"
-    "SL CL CD UL"
-    "SL UI CD UL";
+  background-color: var(--secondary);
 
-  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 0px 1px 0px;
+  z-index: 2;
+`;
+
+export const Title = styled.div`
+  font-size: 16px;
+  font-weight: bold;
+  color: var(--white);
+`;
+
+export const ExpandIcon = styled(MdExpandMore)`
+  width: 28px;
+  height: 28px;
+
+  color: var(--white);
+
+  cursor: pointer;
 `;
