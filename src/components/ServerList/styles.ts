@@ -20,6 +20,7 @@ import styled from "styled-components";
 // --link: #5d80d6;
 
 // --rocketseat: #6633cc;
+const winheight = window.innerHeight;
 
 export const Container = styled.div`
   /** qual grid-area usar */
@@ -33,7 +34,7 @@ export const Container = styled.div`
   /** padding vertical */
   padding: 11px 0;
 
-  max-height: 100vh;
+  max-height: winheight;
   /** cria um scroll quando elementos excedem o tamanho da tela */
   overflow-y: scroll;
 
