@@ -1,5 +1,4 @@
 import styled from "styled-components";
-
 /** GRID TEMPLATE
  * SL - Server List
  * SN - Server Name
