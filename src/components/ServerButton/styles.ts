@@ -24,8 +24,8 @@ export const Button = styled.button<Props>`
 
   /** força o tamanho da imagem */
   > img {
-    width: 24px;
-    height: 24px;
+    width: 32px;
+    height: 32px;
   }
 
   &::before {
